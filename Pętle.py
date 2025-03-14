@@ -13,3 +13,4 @@ tekst = "Python"
 for litera in tekst:
     print(litera)
 
+# Pętla while
