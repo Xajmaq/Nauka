@@ -14,3 +14,29 @@ for litera in tekst:
     print(litera)
 
 # Pętla while
+# Powtarzanie do spełnienia warunku. Działa dopóki warunek jest prawdziwy.
+
+# Wpisywanie liczb od 1 do 10
+x = 1
+while x <= 7:
+    print(x)
+    x = x + 1
+    # lub x += 1
+
+# Przerywanie i pomijanie iteracji
+# brake - przerywa pętlę wcześniej.
+# continue - pomijaaktualną iterację i przechodzi do następnej.
+
+# brake
+
+for i in range(1,11):
+    if i == 6:
+        break
+    print(i)
+
+# continue
+
+for i in range(1,11):
+    if i == 6:
+        continue
+    print(i)
