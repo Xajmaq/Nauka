@@ -18,5 +18,7 @@ print("Ćwiczenie 3")
 # Suma liczb od 1 do n
 
 n = int(input("Podaj liczbę n: "))
+for i in range(1, n + 1):
+    print(i)
 
-
+print(((1+n)/2)*n)
