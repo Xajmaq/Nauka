@@ -24,10 +24,10 @@ while x <= 7:
     # lub x += 1
 
 # Przerywanie i pomijanie iteracji
-# brake - przerywa pętlę wcześniej.
-# continue - pomijaaktualną iterację i przechodzi do następnej.
+
 
 # brake
+# brake - przerywa pętlę wcześniej.
 
 for i in range(1,11):
     if i == 6:
@@ -35,8 +35,10 @@ for i in range(1,11):
     print(i)
 
 # continue
+# continue - pomija aktualną iterację i przechodzi do następnej.
 
 for i in range(1,11):
     if i == 6:
         continue
     print(i)
+
