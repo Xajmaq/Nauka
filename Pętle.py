@@ -16,7 +16,7 @@ for litera in tekst:
 # Pętla while
 # Powtarzanie do spełnienia warunku. Działa dopóki warunek jest prawdziwy.
 
-# Wpisywanie liczb od 1 do 10
+# Wpisywanie liczb od 1 do 7
 x = 1
 while x <= 7:
     print(x)
