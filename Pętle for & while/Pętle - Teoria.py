@@ -42,4 +42,31 @@ for i in range(1,11):
         continue
     print(i)
 
+# Sprawdzanie nierówności
+
+a = 5
+b = 10
+
+if a != b:
+    print("a i b są różne")
+
+# Użycie != w pętli while
+
+# Program prosi o wpisanie liczby dopóki użytkownik nie poda 5.
+
+liczba = 0
+
+while liczba != 5:
+    liczba = int(input("Podaj liczbę: "))
+print ("Brawo Podałeś 5.")
+
+
+# Porównanie tekstu
+
+imie = input("Podaj imie: ")
+
+if imie != Adam:
+    print("Nie jesteś Adamem!")
+else:
+    print("Jesteś Adam!")
 
