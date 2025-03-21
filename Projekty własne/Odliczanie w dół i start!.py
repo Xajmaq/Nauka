@@ -1,9 +1,13 @@
-import time
-import os
-import sys
+# W pycharm nie da się oddtworzyć dzięku brzęczka systemowego a nie mam podłaczonych głosników więc
 
-def beep():
-    print('\a', end="", flush=True) # Dzwięk systemowy (beep)
+import time
+import winsound
+
+
+def beep_sound(freq=800, duration=300):
+    winsound.Beep(freq, duration)
+
+    # print('\a', end="", flush=True) # Dzwięk systemowy (beep)
 
 def rocket_effect():
     rakieta = [
@@ -27,7 +31,7 @@ for znak in tekst:
 
 for i in range(10, 5, -1): #10 wartość startowa, 0 wartość końcowa (0 się nie wlicza) -1 o ile się zmiejsza wartość
     print(i, flush=True)
-    beep()
+    beep_sound()
     time.sleep(1)
 
 tekst2 = "Commencing countdown, engines on\n"
@@ -37,7 +41,7 @@ for znak in tekst2:
 
 for i in range(5, 1, -1):
     print(i, flush=True)
-    beep()
+    beep_sound()
     time.sleep(1)
 
 tekst3 = "Check ignition and may God's love be with you\n"
@@ -47,9 +51,12 @@ for znak in tekst3:
 
 for i in range(1, 0, -1):
     print(i, flush=True)
-    beep()
+    beep_sound()
     time.sleep(1)
 
 print("\nLIFTOFF!\n")
-beep()
+for freq in range(600, 1200, 100):
+    beep_sound(freq, 200)
+    time.sleep(0.1)
+
 rocket_effect()
